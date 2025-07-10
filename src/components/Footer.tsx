@@ -10,8 +10,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
-                <div className="bg-neo-700 p-3 rounded-2xl mr-4">
-                  <Zap className="h-8 w-8 text-neo-100" />
+                <div className="bg-neo-700 p-2 rounded-2xl mr-4 flex-shrink-0">
+                  <img 
+                    src="/favicon.ico" 
+                    alt="WMGP Logo" 
+                    className="h-10 w-10 object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">WMGP</h3>
