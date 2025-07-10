@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -17,9 +17,13 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Logo/Brand */}
-          <div className="flex items-center justify-center mb-8">
-            <div className="neo-card p-6">
-              <Zap className="h-12 w-12 text-neo-800 animate-float" />
+          <div className="flex items-center justify-center mb-12">
+            <div className="neo-card p-2 rounded-2xl overflow-hidden">
+              <img 
+                src="/images/logo.jpeg" 
+                alt="WMGP Logo" 
+                className="h-24 w-auto object-contain"
+              />
             </div>
           </div>
           
