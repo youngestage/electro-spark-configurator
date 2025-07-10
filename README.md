@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# Wireless Magnetic Generator Power (WMGP) Configurator
 
-## Project info
+A modern web application for configuring and visualizing custom wireless magnetic generator power units. This tool allows users to explore different configurations of WMGP generators with various power outputs and specifications.
 
-**URL**: https://lovable.dev/projects/43dc9b3a-0ca4-4533-a62f-08b0c685b8d3
+## Features
 
-## How can I edit this code?
+- Interactive 3D visualization of generator models
+- Real-time configuration updates
+- Responsive design for all device sizes
+- Detailed specifications and performance metrics
+- Export configuration as PDF
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **3D Rendering**: Three.js
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **State Management**: React Context API
+- **3D Model Loading**: GLTFLoader
+- **Animation**: Framer Motion
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/43dc9b3a-0ca4-4533-a62f-08b0c685b8d3) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 16+ and npm/yarn
+- Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd electro-spark-configurator
+   ```
 
-Follow these steps:
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Available Scripts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+- `dev` - Start development server
+- `build` - Build for production
+- `preview` - Preview production build locally
+- `test` - Run tests
+- `lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+  ├── components/     # Reusable UI components
+  ├── lib/           # Utility functions and configurations
+  ├── models/        # 3D model configurations
+  ├── styles/        # Global styles and Tailwind config
+  └── App.tsx        # Main application component
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/43dc9b3a-0ca4-4533-a62f-08b0c685b8d3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is proprietary and confidential. All rights reserved.
