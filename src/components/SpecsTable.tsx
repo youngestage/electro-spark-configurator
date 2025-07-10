@@ -3,13 +3,14 @@ import { Check } from "lucide-react";
 
 const SpecsTable = () => {
   const models = [
-    { name: 'WMGP-10', kw: 10, phase: 'Single/3-Phase', voltage: '240V/415V', amps: 42, price: '$15,000', delivery: '4-6 weeks' },
-    { name: 'WMGP-25', kw: 25, phase: '3-Phase', voltage: '415V', amps: 36, price: '$28,000', delivery: '6-8 weeks' },
-    { name: 'WMGP-50', kw: 50, phase: '3-Phase', voltage: '415V', amps: 72, price: '$45,000', delivery: '8-10 weeks' },
-    { name: 'WMGP-100', kw: 100, phase: '3-Phase', voltage: '415V', amps: 144, price: '$75,000', delivery: '10-12 weeks' },
-    { name: 'WMGP-250', kw: 250, phase: '3-Phase', voltage: '415V', amps: 361, price: '$150,000', delivery: '12-16 weeks' },
-    { name: 'WMGP-500', kw: 500, phase: '3-Phase', voltage: '415V', amps: 722, price: '$280,000', delivery: '16-20 weeks' },
-    { name: 'WMGP-1000', kw: 1000, phase: '3-Phase', voltage: '415V', amps: 1444, price: '$500,000', delivery: '20-24 weeks' }
+    { name: 'WMPG5.0SERIES', kw: 5, phase: 'Single Phase', voltage: '220V', amps: 22, price: '₦5,500,000', delivery: '4-6 weeks' },
+    { name: 'WMPG10SERIES', kw: 10, phase: 'Single Phase', voltage: '220V', amps: 45, price: '₦9,000,000', delivery: '6-8 weeks' },
+    { name: 'WMPG25SERIES', kw: 25, phase: '3-Phase', voltage: '480V', amps: 30, price: '₦12,000,000', delivery: '6-8 weeks' },
+    { name: 'WMPG50SERIES', kw: 50, phase: '3-Phase', voltage: '480V', amps: 60, price: '₦20,000,000', delivery: '8-10 weeks' },
+    { name: 'WMPG100SERIES', kw: 100, phase: '3-Phase', voltage: '480V', amps: 120, price: '₦37,000,000', delivery: '10-12 weeks' },
+    { name: 'WMPG250SERIES', kw: 250, phase: '3-Phase', voltage: '480V', amps: 300, price: '₦93,000,000', delivery: '12-16 weeks' },
+    { name: 'WMPG500SERIES', kw: 500, phase: '3-Phase', voltage: '480V', amps: 600, price: '₦165,000,000', delivery: '16-20 weeks' },
+    { name: 'WMPG1000SERIES', kw: 1000, phase: '3-Phase', voltage: '480V', amps: 1200, price: '₦250,000,000', delivery: '20-24 weeks' }
   ];
 
   const features = [

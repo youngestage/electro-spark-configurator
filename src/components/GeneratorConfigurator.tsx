@@ -18,28 +18,22 @@ interface GeneratorModel {
 
 const GeneratorConfigurator = () => {
   const models: GeneratorModel[] = [
-    { id: 'wmgp10', name: 'WMGP-10', kw: 10, phase: 'Single/Three Phase', voltage: '240V/415V', amps: 42, price: 15000, deliveryTime: '4-6 weeks' },
-    { id: 'wmgp20', name: 'WMGP-20', kw: 20, phase: 'Single/Three Phase', voltage: '240V/415V', amps: 84, price: 25000, deliveryTime: '6-8 weeks' },
-    { id: 'wmgp30', name: 'WMGP-30', kw: 30, phase: 'Single/Three Phase', voltage: '240V/415V', amps: 126, price: 35000, deliveryTime: '6-8 weeks' },
-    { id: 'wmgp50', name: 'WMGP-50', kw: 50, phase: 'Three Phase', voltage: '415V', amps: 72, price: 45000, deliveryTime: '8-10 weeks' },
-    { id: 'wmgp75', name: 'WMGP-75', kw: 75, phase: 'Three Phase', voltage: '415V', amps: 108, price: 60000, deliveryTime: '10-12 weeks' },
-    { id: 'wmgp100', name: 'WMGP-100', kw: 100, phase: 'Three Phase', voltage: '415V', amps: 144, price: 75000, deliveryTime: '10-12 weeks' },
-    { id: 'wmgp150', name: 'WMGP-150', kw: 150, phase: 'Three Phase', voltage: '415V', amps: 216, price: 100000, deliveryTime: '12-16 weeks' },
-    { id: 'wmgp200', name: 'WMGP-200', kw: 200, phase: 'Three Phase', voltage: '415V', amps: 289, price: 125000, deliveryTime: '12-16 weeks' },
-    { id: 'wmgp250', name: 'WMGP-250', kw: 250, phase: 'Three Phase', voltage: '415V', amps: 361, price: 150000, deliveryTime: '12-16 weeks' },
-    { id: 'wmgp300', name: 'WMGP-300', kw: 300, phase: 'Three Phase', voltage: '415V', amps: 433, price: 180000, deliveryTime: '16-20 weeks' },
-    { id: 'wmgp400', name: 'WMGP-400', kw: 400, phase: 'Three Phase', voltage: '415V', amps: 578, price: 240000, deliveryTime: '16-20 weeks' },
-    { id: 'wmgp500', name: 'WMGP-500', kw: 500, phase: 'Three Phase', voltage: '415V', amps: 722, price: 280000, deliveryTime: '16-20 weeks' },
-    { id: 'wmgp750', name: 'WMGP-750', kw: 750, phase: 'Three Phase', voltage: '415V', amps: 1083, price: 400000, deliveryTime: '20-24 weeks' },
-    { id: 'wmgp1000', name: 'WMGP-1000', kw: 1000, phase: 'Three Phase', voltage: '415V', amps: 1444, price: 500000, deliveryTime: '20-24 weeks' }
+    { id: 'wmpg5', name: 'WMPG5.0SERIES', kw: 5, phase: 'Single Phase', voltage: '220V', amps: 22, price: 5500000, deliveryTime: '4-6 weeks' },
+    { id: 'wmpg10', name: 'WMPG10SERIES', kw: 10, phase: 'Single Phase', voltage: '220V', amps: 45, price: 9000000, deliveryTime: '6-8 weeks' },
+    { id: 'wmpg25', name: 'WMPG25SERIES', kw: 25, phase: '3-Phase', voltage: '480V', amps: 30, price: 12000000, deliveryTime: '6-8 weeks' },
+    { id: 'wmpg50', name: 'WMPG50SERIES', kw: 50, phase: '3-Phase', voltage: '480V', amps: 60, price: 20000000, deliveryTime: '8-10 weeks' },
+    { id: 'wmpg100', name: 'WMPG100SERIES', kw: 100, phase: '3-Phase', voltage: '480V', amps: 120, price: 37000000, deliveryTime: '10-12 weeks' },
+    { id: 'wmpg250', name: 'WMPG250SERIES', kw: 250, phase: '3-Phase', voltage: '480V', amps: 300, price: 93000000, deliveryTime: '12-16 weeks' },
+    { id: 'wmpg500', name: 'WMPG500SERIES', kw: 500, phase: '3-Phase', voltage: '480V', amps: 600, price: 165000000, deliveryTime: '16-20 weeks' },
+    { id: 'wmpg1000', name: 'WMPG1000SERIES', kw: 1000, phase: '3-Phase', voltage: '480V', amps: 1200, price: 250000000, deliveryTime: '20-24 weeks' }
   ];
 
-  const [selectedModel, setSelectedModel] = useState<GeneratorModel>(models[1]); // Default to WMGP-25
+  const [selectedModel, setSelectedModel] = useState<GeneratorModel>(models[1]); // Default to WMPG10SERIES
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-NG', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'NGN',
       minimumFractionDigits: 0
     }).format(price);
   };
@@ -133,12 +127,12 @@ const GeneratorConfigurator = () => {
                       <p className="text-neo-800 font-bold text-lg">{selectedModel.amps}A</p>
                     </div>
                   </div>
-                  <div className="neo-card-pressed p-4 rounded-xl">
-                    <p className="text-neo-600 text-sm">Price per kW</p>
-                    <p className="text-neo-800 font-bold text-lg">
-                      {formatPrice(selectedModel.price / selectedModel.kw)}/kW
-                    </p>
-                  </div>
+                    <div className="neo-card-pressed p-4 rounded-xl">
+                      <p className="text-neo-600 text-sm">Price per kW</p>
+                      <p className="text-neo-800 font-bold text-lg">
+                        {formatPrice(selectedModel.price / selectedModel.kw)}/kW
+                      </p>
+                    </div>
                 </div>
               </div>
               
