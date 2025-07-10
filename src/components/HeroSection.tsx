@@ -42,8 +42,9 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="flex justify-center">
             <Button 
+              variant="neo"
               size="lg" 
-              className="neo-button px-12 py-6 text-lg font-semibold text-neo-800 hover:text-neo-900 group"
+              className="px-12 py-6 text-lg font-semibold group"
               onClick={() => document.getElementById('configurator')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Customize Yours Now
