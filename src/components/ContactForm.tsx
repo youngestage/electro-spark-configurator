@@ -201,8 +201,9 @@ const ContactForm = () => {
                 {/* Submit Button */}
                 <Button 
                   type="submit" 
+                  variant="neo"
                   size="lg" 
-                  className="neo-button w-full py-4 text-lg font-semibold text-neo-800 hover:text-neo-900 group"
+                  className="w-full py-4 text-lg font-semibold group"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

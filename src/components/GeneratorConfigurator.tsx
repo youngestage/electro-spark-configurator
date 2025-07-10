@@ -166,8 +166,9 @@ const GeneratorConfigurator = () => {
                 </div>
                 
                 <Button 
+                  variant="neo"
                   size="lg" 
-                  className="neo-button w-full py-4 text-lg font-semibold text-neo-800 hover:text-neo-900 group"
+                  className="w-full py-4 text-lg font-semibold group"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <ShoppingCart className="mr-3 h-5 w-5" />
