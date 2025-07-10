@@ -56,7 +56,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-neo-100 text-foreground font-sans;
+    @apply bg-neo-100 text-foreground;
+    font-family: 'Melodrama', sans-serif;
   }
 }
 
