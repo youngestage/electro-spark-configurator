@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Melodrama', 'sans-serif'],
+				'sans': ['Red Hat Display', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
