@@ -90,14 +90,6 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="neo-card p-8">
-                <div className="w-full h-64 bg-gradient-to-br from-neo-200 to-neo-300 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <Zap className="h-24 w-24 text-neo-600 mx-auto mb-4 animate-float" />
-                    <p className="text-neo-700 font-medium">WMGP Generator Core</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
