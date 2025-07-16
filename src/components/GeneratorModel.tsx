@@ -106,11 +106,16 @@ useGLTF.preload(modelPath);
 // Main component
 export default function GeneratorModel() {
   return (
-    <div className="w-full h-full min-h-[400px] bg-gradient-to-br from-neo-200 to-neo-300 rounded-2xl overflow-hidden">
+    <div className="w-full h-full bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-2xl overflow-hidden shadow-lg border border-secondary/20">
       <Canvas 
         camera={{ position: [2, 2, 5], fov: 50 }}
         gl={{ antialias: true, alpha: true }}
         dpr={[1, 2]} // For better quality on retina displays
+        style={{
+          width: '100%',
+          height: '100%',
+          minHeight: '400px'
+        }}
       >
         <Suspense fallback={null}>
           {/* Ambient light for overall illumination */}

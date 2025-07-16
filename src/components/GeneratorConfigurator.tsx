@@ -54,17 +54,17 @@ const GeneratorConfigurator = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* 3D Viewer */}
-            <div className="neo-card p-6 h-full">
-              <div className="relative h-full">
+            <div className="neo-card p-4 sm:p-6 h-[400px] md:h-[500px] w-full">
+              <div className="relative w-full h-full">
                 <div className="absolute inset-0 rounded-xl overflow-hidden">
                   <GeneratorModel />
                 </div>
                 {/* Floating specs */}
-                <div className="absolute top-4 right-4 neo-card p-3 z-10">
-                  <p className="text-neo-700 font-bold">{selectedModel.kw}kW</p>
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/80 dark:bg-neo-800/80 backdrop-blur-sm rounded-lg p-2 sm:p-3 z-10 shadow-sm">
+                  <p className="text-sm sm:text-base font-bold text-neo-800 dark:text-neo-100">{selectedModel.kw}kW</p>
                 </div>
-                <div className="absolute bottom-4 left-4 neo-card p-3 z-10">
-                  <p className="text-neo-700 font-bold">{selectedModel.voltage}</p>
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 bg-white/80 dark:bg-neo-800/80 backdrop-blur-sm rounded-lg p-2 sm:p-3 z-10 shadow-sm">
+                  <p className="text-sm sm:text-base font-bold text-neo-800 dark:text-neo-100">{selectedModel.voltage}</p>
                 </div>
               </div>
             </div>

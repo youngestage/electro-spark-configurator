@@ -28,17 +28,17 @@ const HeroSection = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-7xl font-bold text-neo-800 mb-6 leading-tight">
+          <h1 className="text-6xl md:text-7xl font-bold text-secondary-foreground mb-6 leading-tight">
             <span className="block">WMGP</span>
-            <span className="block text-4xl md:text-5xl font-normal text-neo-600 mt-2">
+            <span className="block text-4xl md:text-5xl font-normal text-secondary/90 mt-2">
               Wireless Magnetic Generator Power
             </span>
           </h1>
           
           {/* Subtext */}
-          <p className="text-xl md:text-2xl text-neo-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-secondary/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Revolutionary fuel-less generators powered by 
-            <span className="font-semibold text-neo-800"> Electromagnetic Induction</span>
+            <span className="font-semibold text-secondary-foreground"> Electromagnetic Induction</span>
             <br />
             Zero emissions • Low cost • Renewable energy
           </p>
@@ -46,7 +46,7 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="flex justify-center">
             <Button 
-              variant="neo"
+              variant="secondary"
               size="lg" 
               className="px-12 py-6 text-lg font-semibold group"
               onClick={() => document.getElementById('configurator')?.scrollIntoView({ behavior: 'smooth' })}
