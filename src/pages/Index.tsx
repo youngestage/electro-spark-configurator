@@ -6,6 +6,7 @@ import GeneratorConfigurator from "@/components/GeneratorConfigurator";
 import SpecsTable from "@/components/SpecsTable";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import DemoVideosSection from "@/components/DemoVideosSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <WorkingPrinciples />
+      <DemoVideosSection />
       <GeneratorConfigurator />
       <SpecsTable />
       <ContactForm />

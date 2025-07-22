@@ -44,7 +44,7 @@ const GeneratorConfigurator = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-neo-800 mb-6">
+            <h2 className="text-4xl text-brand-accent md:text-5xl font-bold text-neo-800 mb-6">
               3D Generator Configurator
             </h2>
             <p className="text-xl text-neo-600 max-w-3xl mx-auto">

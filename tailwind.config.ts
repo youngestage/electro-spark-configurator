@@ -78,7 +78,9 @@ export default {
 					'700': '#404040',
 					'800': '#262626',
 					'900': '#171717',
-				}
+				},
+				'brand-light': 'hsl(var(--brand-light))',
+				'brand-accent': 'hsl(var(--brand-accent))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

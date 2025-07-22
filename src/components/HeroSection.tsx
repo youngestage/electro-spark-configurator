@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Logo/Brand */}
           <div className="flex items-center justify-center mb-12">
-            <div className="neo-card p-2 rounded-2xl overflow-hidden">
+            <div className="neo-card p-2 rounded-full overflow-hidden">
               <img 
                 src="/images/logo.jpeg" 
                 alt="WMGP Logo" 
@@ -28,7 +28,7 @@ const HeroSection = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-7xl font-bold text-secondary-foreground mb-6 leading-tight">
+          <h1 className="text-6xl md:text-7xl font-bold text-brand-accent mb-6 leading-tight">
             <span className="block">WMGP</span>
             <span className="block text-4xl md:text-5xl font-normal text-secondary/90 mt-2">
               Wireless Magnetic Generator Power
@@ -48,7 +48,7 @@ const HeroSection = () => {
             <Button 
               variant="secondary"
               size="lg" 
-              className="px-12 py-6 text-lg font-semibold group"
+              className="px-12 py-6 text-lg font-semibold group bg-brand-accent text-white hover:bg-brand-accent/90"
               onClick={() => document.getElementById('configurator')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Customize Yours Now

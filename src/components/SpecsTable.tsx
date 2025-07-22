@@ -30,7 +30,7 @@ const SpecsTable = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-neo-800 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-accent mb-6">
               Complete Specifications
             </h2>
             <p className="text-xl text-neo-600 max-w-3xl mx-auto">
@@ -39,7 +39,7 @@ const SpecsTable = () => {
           </div>
           
           {/* Desktop Table */}
-          <div className="hidden lg:block neo-card p-8 overflow-x-auto">
+          <div className="hidden lg:block neo-card p-8 overflow-x-auto bg-brand-light">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-neo-300">
@@ -78,7 +78,7 @@ const SpecsTable = () => {
           {/* Mobile Cards */}
           <div className="lg:hidden space-y-6">
             {models.map((model) => (
-              <div key={model.name} className="neo-card p-6">
+              <div key={model.name} className="neo-card p-6 bg-brand-light">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-neo-800">{model.name}</h3>
                   <div className="neo-card p-2 w-12 h-12 flex items-center justify-center">

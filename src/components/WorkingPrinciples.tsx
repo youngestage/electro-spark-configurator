@@ -29,7 +29,7 @@ const WorkingPrinciples = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-neo-800 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-accent mb-6">
               Working Principles
             </h2>
             <p className="text-xl text-neo-600 max-w-3xl mx-auto">
@@ -46,7 +46,7 @@ const WorkingPrinciples = () => {
                 className="group relative"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="neo-card p-8 h-full hover:shadow-neo-pressed transition-all duration-500">
+                <div className="neo-card p-8 h-full hover:shadow-neo-pressed transition-all duration-500 bg-brand-light">
                   {/* Icon */}
                   <div className="neo-card p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:shadow-neo-pressed transition-all duration-300">
                     <principle.icon className="h-12 w-12 text-neo-700 group-hover:scale-110 transition-transform duration-300" />

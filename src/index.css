@@ -47,6 +47,8 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 0 0% 96%;
     --sidebar-border: 0 0% 91%;
     --sidebar-ring: 0 0% 15%;
+    --brand-light: 222 48% 80%;  /* #b3c6f7, lighter blue */
+    --brand-accent: 40 90% 55%;  /* #ffc043, gold/orange accent */
   }
 }
 

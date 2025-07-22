@@ -31,7 +31,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-neo-800 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-accent mb-6">
               About WMGP Technology
             </h2>
             <p className="text-xl text-neo-600 max-w-3xl mx-auto leading-relaxed">
@@ -46,7 +46,7 @@ const AboutSection = () => {
             {benefits.map((benefit, index) => (
               <div 
                 key={benefit.title} 
-                className="neo-card p-8 text-center hover:shadow-neo-pressed transition-all duration-300 group"
+                className="neo-card p-8 text-center hover:shadow-neo-pressed transition-all duration-300 group bg-brand-light"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="neo-card p-4 w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:shadow-neo-pressed transition-all duration-300">
