@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 const demoVideos = [
   {
     title: "Demo Video 1",
-    url: "https://drive.google.com/file/d/1hgjT0ik38Q_AsWxhsMcwjZDumhorRT3F/preview"
+    url: "https://drive.google.com/file/d/1Axvh_AdwnKbwptRyERf1wruDk_yJ-yDF/preview"
   },
   {
     title: "Demo Video 2",
