@@ -9,7 +9,7 @@ const demoVideos = [
   },
   {
     title: "Demo Video 2",
-    url: "https://drive.google.com/file/d/1ci7NPdmNn-xBorthMN7o58WISvQFi4Rh/preview"
+    url: "https://drive.google.com/file/d/1AiEAeowbrXSXHApT1nwIAF4c57gEqexW/preview"
   }
 ];
 
