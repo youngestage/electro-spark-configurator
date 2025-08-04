@@ -102,11 +102,11 @@ const ContactForm = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 text-neo-700 mr-3" />
-                    <span className="text-neo-600">sales@wmgp.com</span>
+                    <span className="text-neo-600">talk2drill@gmail.com</span>
                   </div>
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-neo-700 mr-3" />
-                    <span className="text-neo-600">+1 (555) 123-WMGP</span>
+                    <span className="text-neo-600">08022233310</span>
                   </div>
                 </div>
               </div>
